@@ -2,6 +2,8 @@ package edu.grinnell.csc207.util;
 
 /**
  * Some simple search utilities.
+ * @author Samuel A. Rebelsky
+ * @author Leo, Sal
  */
 public class SearchUtils {
   /**

@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /**
  * A very simple implementation of dynamic arrays.
+ * @author Samuel A. Rebelsky
+ * @author Leo, Sal
  *
  * @param <T>
  *   The type of value stored in the dynamic array.
