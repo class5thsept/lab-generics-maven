@@ -8,7 +8,7 @@ import java.math.BigInteger;
 
 /**
  * Some simple experiments with dynamic arrays.
- * @author Samuel A. Rebelsky
+ *  @author Samuel A. Rebelsky
  * @author Leo, Sal
  */
 public class SimpleDynamicArrayExperiments {
@@ -42,11 +42,13 @@ public class SimpleDynamicArrayExperiments {
   public static void main(String[] args) {
     PrintWriter pen = new PrintWriter(System.out, true);
     DynamicArray<BigInteger> numbers =
-        new SimpleDynamicArray<BigInteger>();
+    new SimpleDynamicArray<BigInteger>();
+
 
     // Set some values
     for (int i = 0; i < 10; i++) {
       numbers.set(i, BigInteger.valueOf(i));
+  
     } // for i
 
     // Get some values
@@ -58,5 +60,20 @@ public class SimpleDynamicArrayExperiments {
     for (int i = 0; i < 10; i++) {
       pen.println(numbers.get(i) + "^2 = " + square(numbers.get(i)));
     } // for i
+
+    //e
+     DynamicArray<String> strings = new SimpleDynamicArray<String>();
+    for (int i = 0; i < 10; i++) {
+      strings.set(i, "hello");
+  
+    }
+    for (int i = 0; i < 10; i++) {
+    pen.println("strings[" + i + "] = " + strings.get(i));
+    } // for
+
+
+
+
+
   } // main(String[])
 } // class SimpleDynamicArrayExperiment
