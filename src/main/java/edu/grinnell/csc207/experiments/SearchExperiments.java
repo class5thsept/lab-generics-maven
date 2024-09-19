@@ -2,6 +2,7 @@ package edu.grinnell.csc207.experiments;
 
 import edu.grinnell.csc207.util.SearchUtils;
 import edu.grinnell.csc207.util.predicates.OddInteger;
+import edu.grinnell.csc207.util.predicates.SmallObject;
 import edu.grinnell.csc207.util.predicates.SmallString;
 
 import java.io.PrintWriter;
@@ -24,16 +25,19 @@ public class SearchExperiments {
     PrintWriter pen = new PrintWriter(System.out, true);
 
     // Set up a few arrays to search.
-    String[] strings =
+    /*String[] strings =
         new String[] {"alpha", "bravo", "charlie", "delta", "echo", "foxtrot",
             "golf", "hotel", "india", "juliett", "kilo", "lima", "mike",
-            "november", "oscar"};
+            "november", "oscar"};*/
+    Object[] strings = new Object[] { "alpha", "bravo", "charlie", "delta", "echo", "foxtrot",
+        "golf", "hotel", "india", "juliett", "kilo", "lima", "mike",
+        "november", "oscar" };
     Integer[] numbers =
         new Integer[] {2, 3, 5, 7, 9, 11, 13, 15, 17, 18, 32, 42};
 
     // Okay, we're ready for the experiments
     pen.println("A small string: "
-        + SearchUtils.search(strings, SmallString.PRED));
+        + SearchUtils.search(strings, SmallObject.PRED));
     pen.println("An odd integer: "
         + SearchUtils.search(numbers, OddInteger.PRED));
   } // main(String[])
